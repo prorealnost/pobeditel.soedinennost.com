@@ -1,0 +1,168 @@
+.s-goals {
+  overflow: hidden;
+  padding-bottom: 0 !important;
+}
+
+.s-goals__title {
+  margin-top: 7.143em;
+}
+
+.s-goals .goal {
+  cursor: default;
+  position: relative;
+  z-index: 10;
+}
+
+.s-goals .goal__inner {
+  align-items: center;
+  background: #f1d725;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  font-size: 1.143em;
+  height: 253px;
+  line-height: 1.6;
+  margin: 0 6px;
+  ms-flex-align: center;
+  padding: 2.500em;
+  padding-right: 5em;
+  transition: background-color 0.2s;
+  webkit-align-items: center;
+  webkit-box-align: center;
+  webkit-transition: background-color 0.2s;
+}
+
+@media only screen and (min-width: 90em) {
+  .s-goals .goal__inner {
+    height: 290px;
+  }
+}
+
+.s-goals .goal__inner p:last-child {
+  margin-bottom: 0;
+}
+
+.s-goals .goal__inner:hover {
+  background-color: #f3de4b !important;
+}
+
+.s-goals .goal--photo .goal__inner {
+  background: white;
+  height: auto;
+  padding: 0.357em;
+}
+
+.s-goals .goal--photo .goal__inner:hover {
+  background: white !important;
+}
+
+.s-goals .goal:nth-child(1) {
+  ms-transform: translate(0.571em, -0.214em) rotate(7deg);
+  transform: translate(0.571em, -0.214em) rotate(7deg);
+  webkit-transform: translate(0.571em, -0.214em) rotate(7deg);
+}
+
+.s-goals .goal:nth-child(2) {
+  ms-transform: translate(-3.929em, 3.929em) rotate(-12deg);
+  transform: translate(-3.929em, 3.929em) rotate(-12deg);
+  webkit-transform: translate(-3.929em, 3.929em) rotate(-12deg);
+}
+
+.s-goals .goal:nth-child(2) .goal__inner {
+  background: #ffe849;
+}
+
+.s-goals .goal:nth-child(3) {
+  ms-transform: translate(-8.214em, 11.071em) rotate(3deg) scale(1.4);
+  transform: translate(-8.214em, 11.071em) rotate(3deg) scale(1.4);
+  webkit-transform: translate(-8.214em, 11.071em) rotate(3deg) scale(1.4);
+}
+
+.s-goals .goal:nth-child(4) {
+  ms-transform: translate(1.714em, -1.429em) rotate(14deg);
+  transform: translate(1.714em, -1.429em) rotate(14deg);
+  webkit-transform: translate(1.714em, -1.429em) rotate(14deg);
+}
+
+.s-goals .goal:nth-child(5) {
+  ms-transform: translate(4.286em, 2.143em) rotate(-4deg);
+  transform: translate(4.286em, 2.143em) rotate(-4deg);
+  webkit-transform: translate(4.286em, 2.143em) rotate(-4deg);
+}
+
+.s-goals .goal:nth-child(6) {
+  ms-transform: translate(-19.286em, 18.214em) rotate(-12deg) scale(1.4);
+  transform: translate(-19.286em, 18.214em) rotate(-12deg) scale(1.4);
+  webkit-transform: translate(-19.286em, 18.214em) rotate(-12deg) scale(1.4);
+}
+
+.s-goals .goal:nth-child(7) {
+  ms-transform: translate(2.714em, 8.857em) rotate(-8deg);
+  transform: translate(2.714em, 8.857em) rotate(-8deg);
+  webkit-transform: translate(2.714em, 8.857em) rotate(-8deg);
+}
+
+.s-goals .goal:nth-child(8) {
+  ms-transform: translate(1.786em, 9.5em) rotate(-21deg) scale(1.4);
+  transform: translate(1.786em, 9.5em) rotate(-21deg) scale(1.4);
+  webkit-transform: translate(1.786em, 9.5em) rotate(-21deg) scale(1.4);
+}
+
+.s-goals .goal:nth-child(9) {
+  ms-transform: translate(24.714em, -13em) rotate(-4deg);
+  transform: translate(24.714em, -13em) rotate(-4deg);
+  webkit-transform: translate(24.714em, -13em) rotate(-4deg);
+}
+
+.s-goals .goal:nth-child(9) .goal__inner {
+  background: #f8e03e;
+}
+
+.s-goals .goal:nth-child(10) {
+  ms-transform: translate(-2.5em, 11.071em) rotate(-12deg);
+  transform: translate(-2.5em, 11.071em) rotate(-12deg);
+  webkit-transform: translate(-2.5em, 11.071em) rotate(-12deg);
+}
+
+.s-goals .goal:nth-child(10) .goal__inner {
+  background: #f1d725 url(../images/goal_lana-del-ray.jpg) 90% 90% no-repeat;
+}
+
+.s-goals .goal:nth-child(11) {
+  ms-transform: translate(-13.143em, 5.929em) rotate(9deg) scale(1.1);
+  transform: translate(-13.143em, 5.929em) rotate(9deg) scale(1.1);
+  webkit-transform: translate(-13.143em, 5.929em) rotate(9deg) scale(1.1);
+}
+
+.s-goals .goal:nth-child(12) {
+  ms-transform: translate(-0.786em, 4.286em) rotate(4deg);
+  transform: translate(-0.786em, 4.286em) rotate(4deg);
+  webkit-transform: translate(-0.786em, 4.286em) rotate(4deg);
+  z-index: 5;
+}
+
+.s-goals .goal:nth-child(12) .goal__inner {
+  background: #f8e03e;
+}
+
+.s-goals .goal:nth-child(13) {
+  ms-transform: translate(62.429em, -72.5em) rotate(-3deg);
+  transform: translate(62.429em, -72.5em) rotate(-3deg);
+  webkit-transform: translate(62.429em, -72.5em) rotate(-3deg);
+}
+
+.s-goals .goal:nth-child(13) .goal__inner {
+  background: #ffe849;
+}
+
+.s-goals .goal:nth-child(14) {
+  ms-transform: translate(33.214em, -43.929em) rotate(-7deg);
+  transform: translate(33.214em, -43.929em) rotate(-7deg);
+  webkit-transform: translate(33.214em, -43.929em) rotate(-7deg);
+  z-index: 5;
+}
+
+.s-goals .goal:nth-child(14) .goal__inner {
+  background: #ffe849;
+}

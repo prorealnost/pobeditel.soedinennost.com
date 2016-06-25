@@ -1,0 +1,14 @@
+.s-definition {
+  background: #f5f5f5 url(../images/b_definition.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.s-definition__inner {
+  border: 2px solid #f1d725;
+  font-size: 1.143em;
+  padding: 8.125em 4.375em;
+}
+
+.s-definition__inner p:last-child {
+  margin: 0;
+}

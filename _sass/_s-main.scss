@@ -1,0 +1,62 @@
+
+.s-main {
+  background: #efefef url(../images/b_main.jpg) bottom right no-repeat;
+  background-size: 60%;
+  height: 100vh;
+  min-height: 640px;
+}
+
+@media only screen and (min-width: 90em) {
+  .s-main {
+    background-size: 50%;
+  }
+}
+
+.s-main__inner {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  min-height: 640px;
+  ms-flex-direction: column;
+  ms-flex-pack: center;
+  webkit-box-direction: normal;
+  webkit-box-orient: vertical;
+  webkit-box-pack: center;
+  webkit-flex-direction: column;
+  webkit-justify-content: center;
+}
+
+.s-main__title {
+  line-height: 1;
+  margin: 0 0 1.19em;
+}
+
+.s-main__title em {
+  display: block;
+  font-size: 1.714em;
+  font-style: normal;
+  margin-left: -0.361em;
+}
+
+.s-main__title em small {
+  font-size: 0.6em;
+}
+
+.s-main__introtext {
+  font-size: 1.714em;
+  font-weight: 300;
+  line-height: 1.2;
+  max-width: 50%;
+}
+
+.s-main__sign {
+  bottom: 45px;
+  color: white;
+  font-weight: 700;
+  position: absolute;
+  right: 70px;
+}

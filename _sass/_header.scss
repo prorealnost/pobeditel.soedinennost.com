@@ -1,0 +1,70 @@
+.header {
+  left: 0;
+  padding: 4.286em 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.header__logo, .header__nav, .header__order {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.header__nav {
+  margin-left: 4.286em;
+  padding: 1.143em 0 0;
+}
+
+.header__order {
+  float: right;
+}
+
+.logo {
+  background: url(../images/logo.png) no-repeat;
+  display: inline-block;
+  height: 30px;
+  margin: 0.714em 0;
+  text-decoration: none;
+  text-indent: -9999px;
+  width: 46px;
+}
+
+.menu-primary {
+  font-size: 0;
+  line-height: 1;
+  margin: 0 -1.071rem;
+  padding: 0;
+}
+
+.menu-primary__item {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 1.071em;
+  padding-left: 0;
+  position: relative;
+  vertical-align: top;
+}
+
+.menu-primary__item::before {
+  display: none;
+}
+
+.menu-primary__item a, .menu-primary__item span {
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+  font: 400 1rem/1.5"Muller", sans-serif;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  webkit-transition: all 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.menu-primary__item a:hover, .menu-primary__item span:hover {
+  border-color: #e6e6e6;
+}
+
+.menu-primary__item span {
+  cursor: default;
+}

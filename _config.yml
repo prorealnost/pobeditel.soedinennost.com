@@ -6,8 +6,8 @@ exclude:
   - package.json
   - README.md
   - gulpfile.js
-#metrika: 36255245
-#google_analytics: UA-46456269-10
+metrika: 38157200
+google_analytics: UA-46456269-12
 permalink: /:title/
 
 #title: "Николай Воробьёв"

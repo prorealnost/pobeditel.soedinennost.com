@@ -1,0 +1,30 @@
+.s-about {
+  background: #f5f5f5;
+}
+
+.s-about h2 {
+  margin: 0.750em 0;
+}
+
+.s-about .introtext {
+  margin-bottom: 3.125em;
+}
+
+.s-about .sticky-wrapper {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.s-about__sticker {
+  background: #efefef url(../images/b_main.jpg) bottom right no-repeat;
+  background-size: 50%;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}

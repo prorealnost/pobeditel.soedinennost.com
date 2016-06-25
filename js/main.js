@@ -16,26 +16,7 @@ $(function() {
   }), $(".js-sticker-about").sticky({
     topSpacing: 0,
     zIndex: -1
-  }), $(document).on("submit", "form", function(t) {
-    t.preventDefault();
-    var e = $(this).serialize(),
-      n = $(this).find("[name=name]"),
-      i = $(this).find("[name=phone]"),
-      s = {
-        name: n.val(),
-        phone: i.val()
-      };
-    return s.name.length ? s.phone.length ? void $.post("http://love.prorealnost.com/order.php", e, function(t) {
-      console.log(t);
-      var e = $.parseJSON(t);
-      if (!e.status) return !1;
-      switch (e.status) {
-        case 200:
-          return o.success("Ваше сообщение успешно отправлено!", "success");
-        case 500:
-          return o.error("Произошла ошибка попробуйте позже!", "error")
-      }
-    }) : (i.addClass("error"), o.error("Укажите ваш телефон, пожалуйста!", "warning")) : (n.addClass("error"), o.error("Укажите ваше имя, пожалуйста!", "warning"))
+
   }), $(document).on("click", ".js-scr", function(t) {
     t.preventDefault();
     var e = $(this).attr("href"),

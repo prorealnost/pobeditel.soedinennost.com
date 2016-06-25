@@ -726,7 +726,7 @@ layout: base
 				<div class="row">
 					<div class="col-xs-9">
 						<div class="form">
-							<form method="post">
+							<form method="post" action="http://love.prorealnost.com/order.php">
 								<ul class="form__wrap row">
 							    	<li class="form__item col-xs-4">
 							    		<input type="text" class="input" name="name" placeholder="Имя">
@@ -740,6 +740,9 @@ layout: base
 									    </button>
 								    </li>
 								</ul>
+					      <input type="hidden" name="trello-list-id" value="569f823006dc53595355c866" />
+					      <input type="hidden" name="redirect" value="http://pobeditel.soedinennost.com/ok/" />
+					      <input type="hidden" name="form" value="anchor" />
 							</form>
 						</div>
 					</div>
@@ -924,7 +927,7 @@ layout: base
    	<div class="form">
    		<h3 class="title">Регистрируйся на первую бесплатную консультацию</h3>
    		
-		<form method="post">
+		<form method="post" action="http://love.prorealnost.com/order.php">
 			<ul class="form__wrap row">
 				<li class="form__item col-xs-4">
 		    		<input type="text" name="name" class="input input--outline" placeholder="Имя">
@@ -940,6 +943,7 @@ layout: base
 			</ul>
       <input type="hidden" name="trello-list-id" value="569f823006dc53595355c866" />
       <input type="hidden" name="redirect" value="http://pobeditel.soedinennost.com/ok/" />
+      <input type="hidden" name="form" value="modal" />
 		</form>
 	</div>
 </div>

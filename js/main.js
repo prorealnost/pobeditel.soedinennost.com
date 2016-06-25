@@ -25,7 +25,7 @@ $(function() {
         name: n.val(),
         phone: i.val()
       };
-    return s.name.length ? s.phone.length ? void $.post("order.php", e, function(t) {
+    return s.name.length ? s.phone.length ? void $.post("http://love.prorealnost.com/order.php", e, function(t) {
       console.log(t);
       var e = $.parseJSON(t);
       if (!e.status) return !1;

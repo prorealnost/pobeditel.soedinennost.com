@@ -132,7 +132,8 @@ $(function() {
 			message.init(msg,cls);
 		},
 		init: function(msg, cls) {
-			$body.append('<div class="notice notice--'+cls+'" style="opacity:0;"><div class="wrapper">'+msg+'</div></div>');
+			$body.append('<div class="notice notice--'+cls
+				+'" style="opacity:0;"><div class="wrapper">'+msg+'</div></div>');
 
 			var height_notice = $('.notice').height();
 			$('.notice').css('bottom', '-'+height_notice+'px');
@@ -157,7 +158,26 @@ $(function() {
 		}
 	};
 
+	// Analytics
 
+	$('button[data-analytics]').click(function(){
+		var name = $(this).data('analytics');
+		ga('send', 'pageview', '/funnel/' + name + '/');
+		return true;
+	});
 
+	// Scroll analytics
+
+	$('*[data-analytics-page]').on('scrollSpy:enter', function() {
+	  //console.log('enter:', $(this).data('analytics-page'));
+		ga('send', 'event', 'section', 'view', name);
+		//ga('send', 'pageview', '/funnel/' + name + '/');
+	});
+
+	//$('*[data-analytics-page]').on('scrollSpy:exit', function() {
+	//  console.log('exit:', $(this).data('analytics-page'));
+	//});
+
+	$('*[data-analytics-page]').scrollSpy();
 });
 

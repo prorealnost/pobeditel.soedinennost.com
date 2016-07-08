@@ -22,12 +22,12 @@
         top: -1%;
         height: 52%;
         border-right: 2px solid $color-primary;
-        transform: rotate(-15deg);
+        @include transform(rotate(-15deg));
       }
       &::after {
         top: auto;
         bottom: -1%;
-        transform: rotate(15deg);
+        @include transform(rotate(15deg));
       }
     }
     h4 {

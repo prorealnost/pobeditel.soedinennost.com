@@ -9,32 +9,52 @@
   }
   &__item {
     padding: 2.857em;
+    position: relative;
     &--outline {
-      border: 2px solid $color-primary;
+      //border: 2px solid $color-primary;
       border-right: 0;
+      overflow: hidden;
       //margin-right: 2.857em;
-      position: relative;
-      &::before,
-      &::after {
+      &::before {
         content: '';
+        border: 2px solid $color-primary;
+        border-right: 0;
         position: absolute;
-        right: -7%;
-        top: -1%;
-        height: 52%;
-        border-right: 2px solid $color-primary;
-        @include transform(rotate(-15deg));
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
       }
-      &::after {
-        top: auto;
-        bottom: -1%;
-        @include transform(rotate(15deg));
-      }
+
     }
     h4 {
       margin-top: 0;
     }
     h5 {
       margin-bottom: 0;
+    }
+  }
+  &__arrow {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    &:before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 32%;
+      top: -1%;
+      height: 52%;
+      border-right: 2px solid $color-primary;
+      transform: rotate(-15deg);
+    }
+    &::after {
+      top: auto;
+      bottom: -1%;
+      transform: rotate(15deg);
     }
   }
 }

@@ -14,7 +14,11 @@
         background: $color-primary;
         padding: 2.500em;
         padding-right: 5em;
-        //display: flex;
+        
+        @include flexbox;
+        @include flex-direction(column);
+        @include justify-content(center);
+
         align-items: center;
         margin: 0 6px;
         height: 253px;
